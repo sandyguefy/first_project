@@ -20,7 +20,7 @@ GPIOx_ODR (write something in the output)
 
 
 #include "stm32f4xx.h"
-#define LED_DELAY  1000000
+#define LED_DELAY  100000
 void delay (uint32_t x);
 void delay (uint32_t x){
 	for (;x>0;x--)
@@ -32,16 +32,16 @@ void delay (uint32_t x){
 }
 int main(){
 	
-	RCC->AHB1ENR |= (1<<3);
+	RCC->AHB1ENR |= (1<<1);
 	
-	// GPIOD_12 AS OUTPUT-----
- GPIOD->MODER |= (1<<24);
- GPIOD->MODER &= ~(1<<25);
- //GPIOD->ODR |= (1<<12);
+	// GPIOB_15 AS OUTPUT-----
+ GPIOB->MODER |= (1<<30);
+ GPIOB->MODER &= ~(1<<31);
+ //GPIOB->ODR |= (1<<15);
 	//-----------------------
 	while (1){
 		delay (LED_DELAY);
-		GPIOD->ODR ^=(1<<12);
+		GPIOB->ODR ^=(1<<15);
 	
 	}
 	
