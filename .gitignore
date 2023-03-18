@@ -33,7 +33,7 @@
 
 # Build tree
 /build-*
-
+Arduino/*
 #
 # Top-level generic files
 #
