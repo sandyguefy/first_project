@@ -63,6 +63,7 @@ fit-dtb.blob*
 #
 /include/config/
 /include/generated/
+/Arduino/RTE/
 
 # stgit generated dirs
 patches-*

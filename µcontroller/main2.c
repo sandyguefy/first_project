@@ -1,4 +1,3 @@
-
 #include "stm32f407xx.h"
 #define LED_DELAY  1000000
 void delay (uint32_t x);
@@ -22,8 +21,7 @@ int main()
 		GPIOD->ODR ^=(1<<12);	
 		delay (LED_DELAY);*/
 		}
-		void delay (uint32_t x)
-			{
+		void delay (volatile uint32_t x){
 	
 	      for (;x>0;x--)
 			
@@ -35,4 +33,3 @@ int main()
 	
 	}
 	
-}

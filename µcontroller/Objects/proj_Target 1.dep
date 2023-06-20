@@ -1,0 +1,6 @@
+Dependencies for Project 'proj', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6190000::V6.19::ARMCLANG
+F (.\user)(0x00000000)()
+F (.\main2.c)(0x64905D78)()
+F (RTE/Device/STM32F407VGTx/startup_stm32f407xx.s)(0x6415AFB4)()
+F (RTE/Device/STM32F407VGTx/system_stm32f4xx.c)(0x6415AFB4)()
